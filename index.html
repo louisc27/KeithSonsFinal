@@ -10,7 +10,7 @@
 	<title>Keith & Sons Soul Food</title>
 </head>
 
-<body>
+<body class="container-fluid">
 	<div class="banner" id="blur">
 		<video autoplay muted loop>
 			<source src="assets/images/C0039_5_3.mp4" type="video/mp4">
@@ -19,20 +19,23 @@
 		<div id="wrapper">
 
 			<!-- Header -->
-			<header id="header">
+			<header id="header" class="container">
 				<div class="logo">
 					<span class="icon fas fa-utensils"></span>
 				</div>
 				<div class="content">
 					<div class="inner">
-						<h1>Keith and Sons Soul Food</h1>
+						<h1 class="display-1">Keith and Sons Soul Food</h1>
 						<p>Chill joint dishing up down-home plates with Southern sides, homemade rolls & breakfast eats.
 						</p>
 					</div>
 				</div>
-				<nav class="navbar">
-					<ul class="navbar-nav d-flex flex-row mr-5">
-						<li><a class="nav-link" href="#intro" id="about" data-toggle="modal" data-target="#modal1">About Us</a></li>
+				<nav class="navbar navbar-expand-md">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					  </button>
+					<ul class="navbar-nav mr-auto d-flex flex-row mr-5">
+						<li class="nav-item"><a class="nav-link" href="#intro" id="about" data-toggle="modal" data-target="#modal1">About Us</a></li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							  Menu
@@ -45,9 +48,9 @@
 							  <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal5">Kids Menu</a>
 							</div>
 						  </li>
-						</li>
-						<li><a class="nav-link" href="#about" id="covid" data-toggle="modal" data-target="#modal6">Covid-19</a></li>
-						<li><a class="nav-link" href="#contact" id="contact" data-toggle="modal" data-target="#modal7">Contact</a></li>
+						
+						<li class="nav-item"><a class="nav-link" href="#about" id="covid" data-toggle="modal" data-target="#modal6">Covid-19</a></li>
+						<li class="nav-item"><a class="nav-link" href="#contact" id="contact" data-toggle="modal" data-target="#modal7">Contact</a></li>
 						<!--<li><a href="#elements">Elements</a></li>-->
 					</ul>
 				</nav>
@@ -585,7 +588,7 @@
 	<div class="modal-dialog">
 	  <div class="modal-content">
 		<div class="modal-header">
-		  <h5 class="modal-title" id="exampleModalLabel">Place an order here!</h5>
+		  <h5 class="modal-title" id="exampleModalLabel">Contact Us!</h5>
 		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
 		  </button>
@@ -593,7 +596,15 @@
 		<div class="modal-body">
 			<div class="container">
 				<p class="lead">We are currently only accepting orders over the phone or in person.</p>
-			<form>
+			<div class="container">
+				<div class="row">
+					
+					<div class="col">
+						Our Email Address : kssfcafe@ yahoo.com
+					</div>
+				</div>
+			</div>
+				<form>
 				<div class="form-group">
 					
 					<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -607,10 +618,22 @@
 					<input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Phone Number">
 				  </div>
 				  <div class="form-group">
-					<label for="exampleFormControlTextarea1">Your Order</label>
+					<label for="exampleFormControlTextarea1">Place Your Catering Order Here</label>
 					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 				  </div>
 			</form>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<p class="lead text-bold">7814 Central Ave Landover, MD 20785 <br> P: 301-456-7415</p>
+						
+					</div>
+					<div class="col-12">
+						<p class="lead text-strong">5948 M.L.K Highway Seat Pleasant, MD 20743 <br> P: 301-925-2235</p>
+					
+					</div>
+				</div>
+			</div>
 			</div>
 			</div>
 		<div class="modal-footer">
